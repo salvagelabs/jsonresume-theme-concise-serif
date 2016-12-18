@@ -75,16 +75,6 @@ Now that you have your theme installed, go through a quick overview of each of t
 
 In order to get values from an actual JSONResume, you'll need to use a templating system, such as [Mustache](http://mustache.github.io/) or [Handlebars](http://handlebarsjs.com/). The default boilerplate theme uses Handlebars.
 
-### package.json
-
-Because you'll need to publish this as your own soon, you'll need to change some of the fields. You can replace the name field with your own theme name, so long as it starts with `jsonresume-theme-`. This prefix will allow your theme to be found by the theme server during deployment.
-
-Next, you'll want to change the description and author. You can change the description to anything you'd like, and the author should be your name.
-
-If you are also putting your theme up on Github, you'll probably want to keep the repository field, but replace the url with your own.
-
-Lastly, you can put all of your theme dependencies in the `dependencies` field. As you can see, we already have [Handlebars](http://handlebarsjs.com/) as one of the dependencies. If you wish not to use Handlebars, you may remove this, and replace it with another templating system.
-
 ### index.js
 
 The `index.js` is where all the compiliing of your theme, and neccessary edits will go.

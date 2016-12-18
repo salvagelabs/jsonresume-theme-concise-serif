@@ -39,6 +39,10 @@ h3 {
 h5 {
 	margin-top: 0;
 }
+hr {
+	margin: 25px 0;
+	border-color: lightgrey;
+}
 
 #resume {
 	margin: 0 auto;
@@ -117,9 +121,8 @@ h5 {
 	margin-bottom: 20px;
 }
 
-hr {
-	margin: 25px 0;
-	border-color: lightgrey;
+#awards {
+	margin-bottom: 60px;
 }
 
 /****************

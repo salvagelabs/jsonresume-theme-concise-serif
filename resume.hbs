@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	
+	<title>{{#resume.basics}}{{name}} - {{position}}{{/resume.basics}}</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+	
+	<link href="https://fonts.googleapis.com/css?family=Bitter:400,700" rel="stylesheet">
+
+	<style>
+	{{{css}}}
+	</style>
+	
+	</head>
+	<body>
+	
+		<div id="resume">
+			<div class="col-xs-12 col-md-8 col-md-offset-2">
+				{{> basics }}
+				{{> work }}
+				{{> education }}
+				{{> expertise }}
+				{{> awards }}
+			</div>
+		</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,56 @@
+{{#if resume.work.length}}
+<div id="work" class="col-md-12">
+	<hr class="col-md-9 col-md-offset-3" />
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-3">
+				<h3>Experience</h3>
+			</div>
+
+			<div class="col-md-9">
+				<div class="container-fluid">
+				
+				{{#each resume.work}}
+					<div class="row">
+						{{#if company}}
+						<h4 class="name">
+							{{company}}
+						</h4>
+						{{/if}}
+						{{#if position}}
+						<p class="position">
+							{{position}} | {{#if startDate}} {{MY startDate}} {{/if}} 
+							{{#if endDate }} - {{MY endDate}} {{else}} - Present {{/if}}
+						</p>
+						{{/if}}
+						{{#if website}}
+						<p class="website">
+							<a href="{{website}}">{{website}}</a>
+						</p>
+						{{/if}}
+						{{#if summary}}
+						<p class="summary">
+							{{summary}}
+						</p>
+						{{/if}}
+						{{#if clients.length}}
+						<ul class="clients list-inline">
+							{{#each clients}}
+							<li>{{.}}</li>
+							{{/each}}
+						</ul>
+						{{/if}}
+					</div>
+				{{/each}}
+				
+				</div>
+
+			</div>
+
+		</div>
+		
+	</div>
+</div>
+
+{{/if}}

@@ -1,0 +1,46 @@
+{{#resume.basics}}
+	<div id="basics" class="col-md-12">
+		<div class="container-fluid">
+			<div class="row text-center">
+
+				<h1>{{name}}</h1>
+				<h5>{{#if email}} {{email}} {{/if}} &bull; {{#if phone}} {{phone}} {{/if}}</h5>
+				<h5>{{#location}} {{city}} {{/location}}</h5>
+				{{#if website}}
+					<a href="{{website}}">
+						{{website}}
+					</a>
+				{{/if}}
+
+				{{#if profiles.length}}
+				<section id="profiles">
+					{{#each profiles}}
+					<div class="item">
+						{{#if network}}
+							{{#if url}}
+								<a href="{{url}}">
+								<i class="fa fa-{{toLowerCase network}} fa-fw"></i>
+								</a>
+							{{/if}}
+						{{/if}}
+					</div>
+					{{/each}}
+				</section>
+				{{/if}}
+
+			</div>
+
+			{{#if summary}}
+				<div class="row">
+					<div class="col-md-3">
+						<h3>Summary</h3>
+					</div>
+					<div class="col-md-9">
+						<p>{{summary}}</p>
+					</div>
+				</div>
+			{{/if}}
+
+		</div>	
+	</div>
+{{/resume.basics}}

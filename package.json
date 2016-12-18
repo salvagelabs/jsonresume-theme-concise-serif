@@ -1,0 +1,15 @@
+{
+  "name": "jsonresume-theme-concise-serif",
+  "version": "0.0.1",
+  "description": "Concise theme with Serif font for JSON resume. Skills grouped by skillset, knowledge, tools.",
+  "author": "Daniel Murdolo",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salvagelabs/jsonresume-theme-concise-serif"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
+    "moment": "^2.17.1"
+  }
+}

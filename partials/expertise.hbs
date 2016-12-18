@@ -1,0 +1,70 @@
+{{#if resume.expertise.length }}
+{{#resume.expertise}}
+<div id="skills" class="col-md-12">
+	<hr class="col-md-9 col-md-offset-3" />
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-md-3">
+				<h3>Expertise</h3>
+			</div>
+
+			<div class="col-md-9">
+				<div class="container-fluid">
+					<div class="row">
+						{{#if skillset.length}}
+						<div class="col-sm-4 col-md-4">
+							<div id="skillset" class="row">
+								<h4>Skillset</h4>
+								<ul>
+									{{#each skillset}}
+									<li>
+										{{#if name}}
+											{{name}}
+										{{/if}}
+									</li>
+									{{/each}}
+								</ul>
+							</div>
+						</div>
+						{{/if}}
+						<div class="col-sm-4 col-md-4">
+							{{#if working.length}}
+							<div id="working" class="row">
+								<h4>Working Knowledge</h4>
+								<ul>
+								{{#each working}}
+								<li>
+									{{#if name}}
+										{{name}}
+									{{/if}}
+								</li>
+								{{/each}}
+								</ul>
+							</div>
+							{{/if}}
+						</div>
+						<div class="col-sm-4 col-md-4">
+							{{#if tools.length}}
+							<div id="tools" class="row">
+								<h4>Tools</h4>
+								<ul>
+								{{#each tools}}
+								<li>
+									{{#if name}}
+										{{name}}
+									{{/if}}
+								</li>
+								{{/each}}
+								</ul>
+							</div>
+							{{/if}}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{/resume.expertise}}
+{{/if}}

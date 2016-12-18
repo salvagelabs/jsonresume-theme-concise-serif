@@ -1,0 +1,45 @@
+{{#if resume.education.length}}
+	<div id="education" class="col-md-12">
+		<hr class="col-md-9 col-md-offset-3" />
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-md-3">
+					<h3>Education</h3>
+				</div>
+
+				<div class="col-md-9 courses">
+					<div class="container-fluid">
+				
+						{{#each resume.education}}
+							<div class="row">
+								{{#if institution}}
+								<h4 class="institution">
+									{{institution}}
+								</h4>
+								{{/if}}
+								{{#if area}}
+								<h5 class="area">
+									{{#if studyType}} {{studyType}} {{/if}} {{area}}
+								</h5>
+								{{/if}}
+								<h5 class="date">
+									{{#if endDate}}
+									- <span class="endDate">{{endDate}}</span>
+									{{/if}}
+								</h5>
+								{{#if description}}
+								<p class="description">
+									{{description}}
+								</p>
+								{{/if}}
+							</div>
+						{{/each}}
+					</div>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+{{/if}}

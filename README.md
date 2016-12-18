@@ -103,18 +103,6 @@ The `resume.hbs` file is where the actual template is. It contains all of the ma
 
 Last but not least, the `style.css` defines your styles. Technically, this is completely optional, as you could just write all of your styles in the `<style>` tags of your `resume.hbs`. As the `index.js`, the contents of the `style.css` are put into the `<style>` tags of your compiled theme later, yet again, this is something can change.
 
-## Deployment
-
-If you are familar with NPM, you should be done with this in no time.
-
-If you already have an NPM account, you can run `npm login` and enter your username and password. If not, you can run `npm adduser` and fill in the proper fields.
-
-If you changed the dependencies or added new ones, you'll want to run `npm install` again, and just to make sure, run `npm update` to get the latest version of each dependency.
-
-When you are done with that, you may go into your package.json, and edit the version number. When all of the above is finished, you may run `npm publish` to release your theme to the public. Now everyone can use your theme with their resume.
-
-When updating your theme, you'll need to change the version number and run `npm publish` again.
-
 ## License
 
 Available under [the MIT license](http://mths.be/mit).

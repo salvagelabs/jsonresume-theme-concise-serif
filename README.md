@@ -1,4 +1,4 @@
-# Concise serif theme for jsonresume [![](https://badge.fury.io/js/jsonresume-theme-conciseserif.svg)](https://www.npmjs.org/package/jsonresume-theme-conciseserif)
+# Concise serif theme for jsonresume [![](https://badge.fury.io/js/jsonresume-theme-concise-serif.svg)](https://www.npmjs.org/package/jsonresume-theme-concise-serif)
 
 ## Getting started
 

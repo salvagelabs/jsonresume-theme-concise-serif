@@ -93,7 +93,7 @@ hr {
 	font-weight: bold;
 }
 
-#education h5 {
+#education p {
 	float: left;
 	margin-right: 5px;
 	margin-bottom: 10px;
@@ -101,11 +101,10 @@ hr {
 
 #education p.description {
 	float: left;
-	font-size: 14px;
 	margin: 0 5px 20px 0;
 }
 
-#education .courses .row:last-child p {
+#education .courses .row:last-child p.description {
 	margin: 0;
 }
 
